@@ -1,0 +1,4 @@
+2026-03-10 03:49:46.046 xcodebuild[8727:31101] [MT] IDEDistribution: -[IDEDistributionLogging _createLoggingBundleAtPath:]: Created bundle at path "/var/folders/t5/f77_gwnj6p95qxy9py3fckx00000gn/T/AccountingLedger_2026-03-10_03-49-46.045.xcdistributionlogs".
+Exported AccountingLedger to: /Users/runner/work/Accounting_Ledger_app/Accounting_Ledger_app/AccountingLedger.ipa
+** EXPORT SUCCEEDED **
+
