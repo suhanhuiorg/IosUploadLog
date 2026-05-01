@@ -1,0 +1,65 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild archive -workspace ./QingjianTianqi.xcworkspace -scheme QingjianTianqi -configuration Release -destination generic/platform=iOS -archivePath /Users/runner/work/Weather_Forecast_03/Weather_Forecast_03/build.xcarchive
+
+2026-05-01 05:55:15.329 xcodebuild[2142:9749] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (6 targets)
+    Target 'QingjianTianqi' in project 'QingjianTianqi'
+        ➜ Implicit dependency on target 'Pods-QingjianTianqi' in project 'Pods' via file 'Pods_QingjianTianqi.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'SubscriptionKit' in project 'Pods' via options '-framework SubscriptionKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-QingjianTianqi' in project 'Pods'
+        ➜ Explicit dependency on target 'SubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'SubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMAPM' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/Weather_Forecast_03/Weather_Forecast_03/QingjianTianqi/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 49b822a5e6e2840576ba972f8876a979
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/QingjianTianqi-dbrckfwrkuaoffhjvbdudjlnznur/Build/Intermediates.noindex/ArchiveIntermediates/QingjianTianqi/IntermediateBuildFilesPath/XCBuildData/49b822a5e6e2840576ba972f8876a979.xcbuilddata
+/Users/runner/work/Weather_Forecast_03/Weather_Forecast_03/QingjianTianqi.xcodeproj: error: Provisioning profile "appstore-6760635382-20260501055444626" doesn't include the WeatherKit capability. (in target 'QingjianTianqi' from project 'QingjianTianqi')
+/Users/runner/work/Weather_Forecast_03/Weather_Forecast_03/QingjianTianqi.xcodeproj: error: Provisioning profile "appstore-6760635382-20260501055444626" doesn't include the com.apple.developer.weatherkit entitlement. (in target 'QingjianTianqi' from project 'QingjianTianqi')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace QingjianTianqi with scheme QingjianTianqi
+(1 failure)
